@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]</xpath>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]/weaponTags</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]</xpath>
+					<value>
+						<weaponTags Inherit="False">
+							<li>ORVibroweapon</li>
+							<li>ORVibroblade</li>
+							<li>ORTuskenMelee</li>
+							<li>ORRebelLight</li>
+							<li>ORImperialLight</li>
+						</weaponTags>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]/weaponTags</xpath>
+					<value>
+						<li>ORVibroweapon</li>
+						<li>ORVibroblade</li>
+						<li>ORTuskenMelee</li>
+						<li>ORRebelLight</li>
+						<li>ORImperialLight</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]/weaponMoney</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]</xpath>
+					<value>
+						<weaponMoney>300~3000</weaponMoney>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Tribal_Berserker"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>300~3000</weaponMoney>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]</xpath>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]/weaponTags</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]</xpath>
+					<value>
+						<weaponTags Inherit="False">
+							<li>ORRebelLight</li>
+							<li>ORImperialLight</li>
+							<li>ORTuskenSniper</li>
+						</weaponTags>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]/weaponTags</xpath>
+					<value>
+						<li>ORRebelLight</li>
+						<li>ORImperialLight</li>
+						<li>ORTuskenSniper</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]/weaponMoney</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]</xpath>
+					<value>
+						<weaponMoney>300~3000</weaponMoney>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Tribal_HeavyArcher"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>300~3000</weaponMoney>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]</xpath>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]/weaponTags</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]</xpath>
+					<value>
+						<weaponTags Inherit="False">
+							<li>ORVibroweapon</li>
+							<li>ORVibroblade</li>
+							<li>ORTuskenMelee</li>
+							<li>ORRebelAny</li>
+							<li>ORImperialAny</li>
+						</weaponTags>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]/weaponTags</xpath>
+					<value>
+						<li>ORVibroweapon</li>
+						<li>ORVibroblade</li>
+						<li>ORTuskenMelee</li>
+						<li>ORRebelAny</li>
+						<li>ORImperialAny</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]/weaponMoney</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]</xpath>
+					<value>
+						<weaponMoney>500~5000</weaponMoney>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefMelee"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>500~5000</weaponMoney>
+					</value>
+				</match>
+			</li>
+
+			<li Class="PatchOperationTest">
+				<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]</xpath>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]/weaponTags</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]</xpath>
+					<value>
+						<weaponTags Inherit="False">
+							<li>ORRebelAny</li>
+							<li>ORImperialAny</li>
+							<li>ORTuskenSniper</li>
+						</weaponTags>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]/weaponTags</xpath>
+					<value>
+						<li>ORRebelAny</li>
+						<li>ORImperialAny</li>
+						<li>ORTuskenSniper</li>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]/weaponMoney</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]</xpath>
+					<value>
+						<weaponMoney>500~5000</weaponMoney>
+					</value>
+				</nomatch>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/PawnKindDef[defName="Tribal_ChiefRanged"]/weaponMoney</xpath>
+					<value>
+						<weaponMoney>500~5000</weaponMoney>
+					</value>
+				</match>
+			</li>
+
+		</operations>
+	</Operation>	
+</Patch>

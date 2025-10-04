@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+    <v1.6>
+        <li>/</li>
+        <li>1.6/Patches/Core</li>
+        <li IfModActive="Neronix17.OuterRim.Csilla">1.6/Patches/Csilla</li>
+        <li IfModActive="Neronix17.OuterRim.GalacticEmpire">1.6/Patches/GalacticEmpire</li>
+        <li IfModActive="Neronix17.OuterRim.GalacticRepublic">1.6/Patches/GalacticRepublic</li>
+        <li IfModActive="Neronix17.OuterRim.Mandalore">1.6/Patches/Mandalore</li>
+        <li IfModActive="Neronix17.OuterRim.OldRepublic">1.6/Patches/OldRepublic</li>
+        <li IfModActive="Neronix17.OuterRim.RebelAlliance">1.6/Patches/RebelAlliance</li>
+        <li IfModActive="Neronix17.OuterRim.Separatists">1.6/Patches/Separatists</li>
+    </v1.6>
+	<v1.5>
+        <li>/</li>
+        <li>1.6/Patches/Core</li>
+        <li IfModActive="Neronix17.OuterRim.Csilla">1.6/Patches/Csilla</li>
+        <li IfModActive="Neronix17.OuterRim.GalacticEmpire">1.6/Patches/GalacticEmpire</li>
+        <li IfModActive="Neronix17.OuterRim.GalacticRepublic">1.6/Patches/GalacticRepublic</li>
+        <li IfModActive="Neronix17.OuterRim.Mandalore">1.6/Patches/Mandalore</li>
+        <li IfModActive="Neronix17.OuterRim.OldRepublic">1.6/Patches/OldRepublic</li>
+        <li IfModActive="Neronix17.OuterRim.RebelAlliance">1.6/Patches/RebelAlliance</li>
+        <li IfModActive="Neronix17.OuterRim.Separatists">1.6/Patches/Separatists</li>
+    </v1.5>
+	<v1.4>
+        <li>/</li>
+        <li>1.6/Patches/Core</li>
+        <li IfModActive="Neronix17.OuterRim.Csilla">1.6/Patches/Csilla</li>
+        <li IfModActive="Neronix17.OuterRim.GalacticEmpire">1.6/Patches/GalacticEmpire</li>
+        <li IfModActive="Neronix17.OuterRim.GalacticRepublic">1.6/Patches/GalacticRepublic</li>
+        <li IfModActive="Neronix17.OuterRim.Mandalore">1.6/Patches/Mandalore</li>
+        <li IfModActive="Neronix17.OuterRim.OldRepublic">1.6/Patches/OldRepublic</li>
+        <li IfModActive="Neronix17.OuterRim.RebelAlliance">1.6/Patches/RebelAlliance</li>
+        <li IfModActive="Neronix17.OuterRim.Separatists">1.6/Patches/Separatists</li>
+    </v1.5>
+</loadFolders>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Neronix17.OuterRim.Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="VillagerBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="VillagerBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="VillagerBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="VillagerBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="VillagerBase"]/weaponMoney</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="VillagerBase"]</xpath>
+						<value>
+							<weaponMoney>1500~3000</weaponMoney>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="VillagerBase"]/weaponMoney</xpath>
+						<value>
+							<weaponMoney>1500~3000</weaponMoney>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="VillagerBase"]/inventoryOptions</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="VillagerBase"]</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="VillagerBase"]/inventoryOptions</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="GuardBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="GuardBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+								<li>ORVibroweapon</li>
+								<li>ORVibroblade</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+								<li>ORVibroweapon</li>
+								<li>ORVibroblade</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="GuardBase"]/weaponMoney</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]</xpath>
+						<value>
+							<weaponMoney>2500~4000</weaponMoney>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]/weaponMoney</xpath>
+						<value>
+							<weaponMoney>2500~4000</weaponMoney>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="GuardBase"]/apparelTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]</xpath>
+						<value>
+							<apparelTags>
+								<li>ORBodysuit</li>
+							</apparelTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]/apparelTags</xpath>
+						<value>
+							<li>ORBodysuit</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="GuardBase"]/inventoryOptions</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="GuardBase"]/inventoryOptions</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="TraderBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="TraderBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="TraderBase"]/weaponMoney</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]</xpath>
+						<value>
+							<weaponMoney>2500~4000</weaponMoney>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]/weaponMoney</xpath>
+						<value>
+							<weaponMoney>2500~4000</weaponMoney>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="TraderBase"]/apparelTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]</xpath>
+						<value>
+							<apparelTags>
+								<li>ORBodysuit</li>
+							</apparelTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]/apparelTags</xpath>
+						<value>
+							<li>ORBodysuit</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="TraderBase"]/inventoryOptions</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="TraderBase"]/inventoryOptions</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelLight</li>
+								<li>ORImperialLight</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/weaponMoney</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]</xpath>
+						<value>
+							<weaponMoney>2500~4000</weaponMoney>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/weaponMoney</xpath>
+						<value>
+							<weaponMoney>2500~4000</weaponMoney>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/apparelTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]</xpath>
+						<value>
+							<apparelTags>
+								<li>ORBodysuit</li>
+							</apparelTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/apparelTags</xpath>
+						<value>
+							<li>ORBodysuit</li>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/inventoryOptions</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="CouncilmanBase"]/inventoryOptions</xpath>
+						<value>
+							<inventoryOptions>
+								<skipChance>0.9</skipChance>
+								<subOptionsChooseOne>
+									<li>
+										<thingDef>MedicineUltratech</thingDef>
+										<countRange>1</countRange>
+									</li>
+								</subOptionsChooseOne>
+							</inventoryOptions>
+						</value>
+					</match>
+				</li>
+							
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

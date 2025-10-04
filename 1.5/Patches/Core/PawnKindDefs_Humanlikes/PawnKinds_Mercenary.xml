@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Neronix17.OuterRim.Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORGrenade</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORGrenade</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/weaponMoney</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]</xpath>
+						<value><weaponMoney>3000~10000</weaponMoney></value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[defName="Grenadier_Destructive"]/weaponMoney</xpath>
+						<value><weaponMoney>3000~10000</weaponMoney></value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelAny</li>
+								<li>ORImperialAny</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelAny</li>
+								<li>ORImperialAny</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/specificApparelRequirements</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]</xpath>
+						<value>
+							<specificApparelRequirements>
+								<li><requiredTag>ORBodysuit</requiredTag></li>
+							</specificApparelRequirements>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/specificApparelRequirements</xpath>
+						<value>
+							<li><requiredTag>ORBodysuit</requiredTag></li>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORTuskenSniper</li>
+								<li>ORImperialSniper</li>
+								<li>ORRebelSniper</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORTuskenSniper</li>
+								<li>ORImperialSniper</li>
+								<li>ORRebelSniper</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="MercenarySlasherBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="MercenarySlasherBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="MercenarySlasherBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORVibroweapon</li>
+								<li>ORVibroblade</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="MercenarySlasherBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORVibroweapon</li>
+								<li>ORVibroblade</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryHeavyBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryHeavyBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryHeavyBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelAny</li>
+								<li>ORRebelHeavy</li>
+								<li>ORImperialAny</li>
+								<li>ORImperialHeavy</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryHeavyBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelAny</li>
+								<li>ORRebelHeavy</li>
+								<li>ORImperialAny</li>
+								<li>ORImperialHeavy</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationTest">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]</xpath>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelAny</li>
+								<li>ORImperialAny</li>
+							</weaponTags>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags</xpath>
+						<value>
+							<weaponTags Inherit="False">
+								<li>ORRebelAny</li>
+								<li>ORImperialAny</li>
+							</weaponTags>
+						</value>
+					</match>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

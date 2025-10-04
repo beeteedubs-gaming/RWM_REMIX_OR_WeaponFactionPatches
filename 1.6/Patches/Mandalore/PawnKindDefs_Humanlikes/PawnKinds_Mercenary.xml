@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Neronix17.OuterRim.Mandalore</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/weaponTags</xpath>
+					<value>
+						<li>ORMandalorian</li>
+						<li>ORMandalorianRanged</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags</xpath>
+					<value>
+						<li>ORMandalorianRifleStrong</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenarySlasherBase"]/weaponTags</xpath>
+					<value>
+						<li>ORMandalorian</li>
+						<li>ORMandalorianMelee</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags</xpath>
+					<value>
+						<li>ORMandalorian</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

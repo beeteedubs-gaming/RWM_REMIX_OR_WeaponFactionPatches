@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Neronix17.OuterRim.RebelAlliance</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Pirate"]/weaponTags</xpath>
+					<value>
+						<li>ORRebelStandard</li>
+						<li>ORRebelHeavyExplosive</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>

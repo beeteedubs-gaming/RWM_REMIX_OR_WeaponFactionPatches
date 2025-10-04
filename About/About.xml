@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[BTD] Remix: Outer Rim Weapon-Faction Patches</name>	
+	<author>beeteedubs</author>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>btd.remix.ORweaponfactionpatches</packageId>
+	<description>Adds weapons from the Out Rim series of Mods to various factions.</description>
+
+	<modDependencies>
+        <li>
+            <packageId>Neronix17.OuterRim.Core</packageId>
+            <displayName>Outer Rim - Core</displayName>
+            <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2919227155</downloadUrl>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2919227155</steamWorkshopUrl>
+        </li>
+	</modDependencies>
+
+	<loadAfter>
+        <li>Neronix17.OuterRim.Core</li>
+		<li>Neronix17.OuterRim.Separatists</li>
+		<li>Neronix17.OuterRim.RebelAlliance</li>
+		<li>Neronix17.OuterRim.OldRepublic</li>
+		<li>Neronix17.OuterRim.Mandalore</li>
+		<li>Neronix17.OuterRim.GalacticRepublic</li>
+		<li>Neronix17.OuterRim.GalacticEmpire</li>
+		<li>Neronix17.OuterRim.Csilla</li>
+	</loadAfter>
+</ModMetaData>
+

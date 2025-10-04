@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Neronix17.OuterRim.GalacticRepublic</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryGunnerBase"]/weaponTags</xpath>
+					<value>
+						<li>ORRepublicAny</li>
+						<li>ORRepublicRifle</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags</xpath>
+					<value>
+						<li>ORRepublicSniper</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryHeavyBase"]/weaponTags</xpath>
+					<value>
+						<li>ORRepublicHeavy</li>
+						<li>ORRepublicHeavyBlaster</li>
+						<li>ORRepublicHeavyExplosive</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags</xpath>
+					<value>
+						<li>ORRepublicAny</li>
+						<li>ORRepublicCommando</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>	
+</Patch>
